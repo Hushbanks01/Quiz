@@ -31,7 +31,14 @@ body{
     cursor: pointer;
 }
 
+#infoBox{
+    display: none;
+}
+#infoBox.visible {
+    display: block;
+}
 .info-box{
+    display: none;
     width: 540px;
     background: #fff;
     border-radius: 5px;

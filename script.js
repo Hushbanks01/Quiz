@@ -38,6 +38,12 @@ const questions = [
 
 ];
 
+const startButton = document.getElementById("start");
+const infoBox = document.getElementById("rule");
+
+startButton.addEventListener("click", () => {
+    infoBox.classList.toggle("visible");
+});
 const questionElement = document.getElementById("question");
 const answerButton = document.getElementById("answer");
 const nextButton = document.getElementById("next-btn");

@@ -9,9 +9,76 @@
 </head>
 <body>
     <div class="start-btn">
-        <button><a href="rules.html">Start Quiz</a></button>
+        <button id="start">Start Quiz</button>
     </div>
+    <div class="info-box" id="rule">
+        <div class="info-title">
+            <span>Some Rules of this quiz</span>
+        </div>
+        <div class="info-list">
+            <div class="info">1. You will have only <span>15seconds</span> per each question.</div>
+            <div class="info">2. Once you select your answer, You can't reselect.</div>
+            <div class="info">3. You can't select any option once time goes off.</div>
+            <div class="info">4. You can't exit from the quiz while you're playing.</div>
+            <div class="info">5. You'll get points on the basis of your correct answer.</div>
+        </div>
+        <div class="button">
+            <button class="quiz">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+    <div class="quiz-box">
+        <header>
+            <div class="title">Awesom Quiz Application</div>
+            <div class="timer">
+                <div class="time-text">Time left</div>
+                <div class="timer-sec">15</div>
+            </div>
+        </header>
+        <section>
+            <div class="que-text" id="question">
+                <span>What does HTML stand for?</span>
+            </div>
+            <div class="option-list">
+                <div class="option" id="">
+                    <span>Hyper TExt Preprocessor</span>
+                    <div class="icon tick"><i class="fas fa-check"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper TExt Markup Language</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper TExt Multiple Language</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Toot Multi Language</span>
+                    <div class="icon cross"><i class="fas fa-times"></i></div>
+                </div>
+            </div>
+        </section>
 
+        <footer>
+            <div class="total-que">
+                <span><p>2</p>of<p>5</p>Questions</span>
+            </div>
+            <button class="next-btn">Next que</button>
+        </footer>
+    </div>
+    <div class="result-box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete-text">You've completed the Quiz!</div>
+        <div class="score-text">
+            <span>and sorry, you got only <p>2</p> out of <p>5</p></span>
+        </div>
+        <div class="button">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
     <script scr="script.js"></script>
 </body>
 </html>
